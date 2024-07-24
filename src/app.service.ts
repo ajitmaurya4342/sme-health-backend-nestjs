@@ -14,7 +14,6 @@ export class AppService {
   async uploadS3(file) {
     const { originalname,buffer } = file;
     const {AWS_S3_BUCKET , AWS_Credential}= AWS_CONFIG;
-    console.log(AWS_S3_BUCKET)
     const randomName = Array(32).fill(null).map(() => (Math.round(Math.random() * 16)).toString(16)).join('')
     const fileName = `${randomName}_${originalname}`
 
