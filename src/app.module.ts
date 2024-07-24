@@ -6,7 +6,6 @@ import { CompanyService } from './Company/company.service';
 import { KnexModule } from 'nest-knexjs';
 import { ConfigModule } from '@nestjs/config';
 import { configObj } from './Config';
-import { MulterModule } from '@nestjs/platform-express';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 
